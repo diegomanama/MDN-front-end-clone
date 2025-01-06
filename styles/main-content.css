@@ -1,0 +1,105 @@
+main {
+    padding-inline: 1.5rem;
+    margin-block-start: 9.6rem;
+    position: relative;
+    display: flow-root;
+}
+
+.articles-navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+
+    a {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+    }
+}
+
+.articles-navigation-buttons:nth-of-type(1) {
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    right: 0;
+}
+
+article {
+
+    a:visited {
+        color: var(--visited-link-color)
+    }
+}
+
+.title {
+    margin-block-end: 9rem;
+} /* This's h1's class */
+
+.contribution {
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    padding: 2rem 1.5rem;
+    margin-block: 3.2rem;
+    background-color: var(--secondary-bg-color);
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    gap: 3.2rem;
+
+    /* childs' typography & links' style */
+
+    h2 {
+        font-size: x-large;
+        font-weight: normal;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+    
+    /* childs' spacing */
+
+    h2, .open-source :first-child {
+        margin-block-start: 0;
+    }
+
+    p:last-of-type {
+        margin-block-end: 0;
+    }
+}
+
+.feedback-buttons {
+    block-size: 3rem;
+    inline-size: 7rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-inline-start: 2.5rem;
+    background-color: var(--secondary-bg-color);
+}
+
+.feedback-buttons.yes {
+    /* background: no-repeat left 1rem center / auto 50% url(../media/thumbs-up.svg); */
+    background-color: black;
+    mask: no-repeat left 1rem center / auto 50% url(../media/thumbs-up.svg);
+    mask-mode: luminance;
+}
+
+.feedback-buttons.no {
+    background: no-repeat left 1rem center / auto 50% url(../media/thumbs-down.svg);
+}
+
+.feedback-buttons.no:hover {
+    border: var(--negative-feedback-color);
+    background-color: var(--negative-feedback-color);
+    color: white;
+}
+
+.help-icon {
+    inline-size: 20%;
+    max-inline-size: 12rem;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+}

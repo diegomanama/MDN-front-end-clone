@@ -12,15 +12,12 @@
 <body>
     <header>
         <div class="top-navigation-wrapper">
-            <img class="header-logo" src="media/mdn-web-docs-light-theme.svg" alt="">
-            <div class="menu-button"></div>
+            <ion-icon class="menu-button" name="menu-sharp"></ion-icon>
         </div>
         <div class="article-actions-wrapper">
-            <div class="sidebar-button">
-            </div>
+                <ion-icon class="sidebar-button" name="list"></ion-icon>
             <nav></nav>
-            <div class="article-actions-button">
-            </div>
+            <ion-icon class="article-actions-button" name="ellipsis-vertical"></ion-icon>
         </div>
     </header>
     <main>
@@ -53,7 +50,8 @@
         <div class="code-snnipet-wrapper">
             <div class="snnipet-header">
                 <span class="code-tagger" >CSS</span>
-                <img class="copy-code-button" src="/media/clippy.svg" alt="">
+                <!-- <img class="copy-code-button" src="/media/clippy.svg" alt=""> -->
+                <ion-icon class="copy-code-button" name="clipboard-outline"></ion-icon>
             </div>
             <code>
                 h1 { <br>
@@ -63,6 +61,9 @@
             </code>
         </div>
         <div class="info-note">
+            <div class="warning-wrapper">
+                <ion-icon class="warning" name="alert-circle"></ion-icon>
+            </div>
             Note: You can find links to all the CSS property pages (along with other CSS features) listed on the MDN CSS reference. Alternatively, you should get used to searching for "mdn css-feature-name" in your favorite search engine whenever you need to find out more information about a CSS feature. For example, try searching for "mdn color" and "mdn font-size"!
         </div>
         </article>
@@ -75,9 +76,14 @@
                 <div>
                     <h2>Help improve MDN</h2>
                     <p>Was this page helpful to you?</p>
-                    <img class="help-icon" src="./media/help-improve-mdn.svg" alt="Two dialog clouds"/>
-                    <button class="feedback-buttons yes">Yes</button>
-                    <button class="feedback-buttons no">No</button>
+                    <!-- <img class="help-icon" src="./media/help-improve-mdn.svg" alt="Two dialog clouds"/> -->
+                    <ion-icon class="help-icon" name="chatbubbles" alt="Two dialog clouds"></ion-icon>
+                    <button class="feedback-buttons">
+                        <ion-icon class="yes" name="thumbs-up-sharp"></ion-icon>
+                        Yes</button>
+                    <button class="feedback-buttons">
+                        <ion-icon class="no" name="thumbs-down-sharp"></ion-icon>
+                        No</button>
                     <p>
                         <a href="https://github.com/mdn/content/blob/main/CONTRIBUTING.md">Learn how to contribute</a>.
                     </p>
@@ -93,8 +99,7 @@
     <footer>
         <div class="links-wrapper">
             <nav class="social">
-                <img src="./media/mdn-logo.svg" alt="">
-                <p class="social-slogan">Your blueprint for a better internet.</p>
+                <p class="social-slogan"><span>MDN</span><br>Your blueprint for a better internet.</p>
             </nav>
             <nav class="mdn">
                 <h2>MDN</h2>
@@ -133,7 +138,6 @@
         <hr>
         <div class="legal">
             <div class="wrapper">
-                <img src="./media/mozilla-logo.svg" alt="">
                 <ul class="policies">
                     <li><a href="https://www.mozilla.org/privacy/websites/">Website Privacy Notice</a></li>
                     <li><a href="https://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
@@ -147,5 +151,7 @@
             </div>
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

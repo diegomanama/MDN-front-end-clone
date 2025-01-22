@@ -77,17 +77,12 @@ article {
     border: 1px solid black;
     padding-inline-start: 2.5rem;
     background-color: var(--secondary-bg-color);
+    position: relative;
 }
 
-.feedback-buttons.yes {
-    /* background: no-repeat left 1rem center / auto 50% url(../media/thumbs-up.svg); */
-    background-color: black;
-    mask: no-repeat left 1rem center / auto 50% url(../media/thumbs-up.svg);
-    mask-mode: luminance;
-}
-
-.feedback-buttons.no {
-    background: no-repeat left 1rem center / auto 50% url(../media/thumbs-down.svg);
+.yes, .no {
+    position: absolute;
+    left: 1rem;
 }
 
 .feedback-buttons.no:hover {
@@ -98,8 +93,10 @@ article {
 
 .help-icon {
     inline-size: 20%;
+    block-size: 12rem;
     max-inline-size: 12rem;
     position: absolute;
     top: 2rem;
     right: 1.5rem;
+    color: var(--link-color);
 }

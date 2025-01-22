@@ -10,9 +10,10 @@ header {
 .top-navigation-wrapper {
     padding-inline: 1.6rem;
     block-size: 6.4rem;
-    display: flex; 
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .header-logo {
@@ -21,7 +22,7 @@ header {
 
 .menu-button {
     inline-size: 3.2rem;
-    background: no-repeat center/1.6rem url(../media/menu.svg);
+    block-size: inherit;
 }
 
 .article-actions-wrapper {
@@ -31,15 +32,16 @@ header {
     background-color: var(--secondary-bg-color);
     display: grid;
     grid-template-columns: 3.2rem 1fr 3.2rem;
+    align-items: center;
+    justify-items: center;
 
     .sidebar-button {
         block-size: inherit;
-        border-inline-end: inherit;
-        background: no-repeat center url(../media/sidebar.svg);
+        inline-size: 2rem;
     }
 
     .article-actions-button {
         block-size: inherit;
-        background: no-repeat center/1.6rem url(../media/ellipses.svg);
+        inline-size: 2rem;
     }
 }

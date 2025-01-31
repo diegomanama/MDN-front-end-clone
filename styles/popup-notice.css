@@ -1,0 +1,46 @@
+header, main, footer {
+    filter: blur(5px);
+}
+
+.darkening-cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.popup-wrapper {
+    display: flex;
+    position: fixed;
+    top: 25vh;
+    bottom: 25vh;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-notice {
+    background-color: var(--primary-bg-color);
+    border-radius: var(--staple-corner-radius);
+    padding-block: 3rem;
+    padding-inline: 2rem;
+    width: 50vw;
+    min-width: 30rem;
+    box-sizing: border-box;
+
+    .close-btn {
+        font-weight: bold;
+        display: block;
+        margin-block-start: 3rem;
+        margin-inline: auto;
+        padding-block: 1.5rem;
+        padding-inline: 2.5rem;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+}

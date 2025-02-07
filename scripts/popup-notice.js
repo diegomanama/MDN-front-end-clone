@@ -1,4 +1,4 @@
-const popupNotice = document.querySelector(".popup-notice");
+const popupWrapper = document.querySelector(".popup-wrapper");
 const closeBtn = document.querySelector(".close-btn");
 const darkeningCover = document.querySelector(".darkening-cover");
 
@@ -7,7 +7,7 @@ closeBtn.addEventListener("click", () => {
     const main = document.querySelector("main");
     const footer = document.querySelector("footer");
 
-    popupNotice.remove();
+    popupWrapper.remove();
     darkeningCover.remove();
 
     header.style.filter = "none";

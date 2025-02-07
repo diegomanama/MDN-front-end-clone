@@ -9,7 +9,7 @@ header, main, footer {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
+    z-index: 4;
 }
 
 .popup-wrapper {
@@ -19,7 +19,7 @@ header, main, footer {
     bottom: 25vh;
     left: 0;
     right: 0;
-    z-index: 3;
+    z-index: 5;
     justify-content: center;
     align-items: center;
 }

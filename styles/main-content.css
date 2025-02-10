@@ -3,6 +3,7 @@ main {
     margin-block-start: 9.6rem;
     position: relative;
     display: flow-root;
+    user-select: none;
 }
 
 .articles-navigation-buttons {

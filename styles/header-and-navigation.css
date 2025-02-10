@@ -5,6 +5,7 @@ header {
     right: 0;
     z-index: 3;
     background-color: var(--primary-bg-color);
+    user-select: none;
 }
 
 .top-navigation-wrapper {

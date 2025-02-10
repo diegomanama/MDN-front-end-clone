@@ -11,8 +11,11 @@ closeBtn.addEventListener("click", () => {
     darkeningCover.remove();
 
     header.style.filter = "none";
+    header.style.userSelect = "text";
     main.style.filter = "none";
+    main.style.userSelect = "text";
     footer.style.filter = "none";
+    footer.style.userSelect = "text";
 });
 
 

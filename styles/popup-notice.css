@@ -1,7 +1,3 @@
-header, main, footer {
-    filter: blur(5px);
-}
-
 .darkening-cover {
     position: fixed;
     top: 0;

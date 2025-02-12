@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="styles/header-and-navigation.css">
     <link rel="stylesheet" href="styles/main-content.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/dynamic-styles.css">
     <link rel="stylesheet" href="styles/popup-notice.css">
-    <script type="module" src="scripts/popup-notice.js"></script>
     <link rel="stylesheet" href="styles/mobile-ini-index.css">
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/popup-notice.js"></script>
     <script type="module" src="scripts/mobile-ini-index.js"></script>
 </head>
-<body>
+<body class="overflow-visible">
     <div class="popup-wrapper">
         <div class="popup-notice">
             <p class="selectable">This layout is a recreation of the MDN articles' layout. I created it to practice core web technologies: HTML, CSS, and JavaScript.</p>
@@ -25,8 +27,7 @@
             <button class="close-btn">I understand</button>
         </div>
     </div>
-    <div class="darkening-cover"></div>
-    <header>
+    <header class="blur unselectable">
         <div class="top-navigation-wrapper">
             <ion-icon class="menu-button" name="menu-sharp"></ion-icon>
         </div>
@@ -36,7 +37,7 @@
             <ion-icon class="article-actions-button" name="ellipsis-vertical"></ion-icon>
         </div>
     </header>
-    <main class="selectable">
+    <main class="blur unselectable">
         <nav class="articles-navigation-buttons">
             <a href="">Previous</a>
             <a href="">Overview</a>
@@ -112,7 +113,7 @@
         <aside></aside>
         <aside></aside>
     </main>
-    <footer class="selectable">
+    <footer class="blur unselectable">
         <div class="links-wrapper">
             <nav class="social">
                 <p class="social-slogan"><span>MDN</span><br>Your blueprint for a better internet.</p>
@@ -167,7 +168,7 @@
             </div>
         </div>
     </footer>
-    <aside class="mobile-ini-index">
+    <aside class="mobile-ini-index invisible">
         <nav>
             <h2>On this page</h2>
             <ul>
@@ -224,5 +225,6 @@
     </aside>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="darkening-cover"></div>
 </body>
 </html>

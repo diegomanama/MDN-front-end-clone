@@ -1,0 +1,25 @@
+{
+  "name": "mdn-layout-recreation",
+  "version": "1.0.0",
+  "description": "A MDN articles' layout recreation",
+  "main": "index.html",
+  "scripts": {
+    "test": "#",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bash-badass/MDN-articles-layout-recreation.git"
+  },
+  "author": "Diego Manama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bash-badass/MDN-articles-layout-recreation/issues"
+  },
+  "homepage": "https://github.com/bash-badass/MDN-articles-layout-recreation#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "husky": "^9.1.7"
+  }
+}

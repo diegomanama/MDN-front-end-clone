@@ -29,3 +29,11 @@
 .overflow-visible {
     overflow-y: visible;
 }
+
+.visible-flex {
+    display: flex;
+}
+
+.no-clickable {
+    pointer-events: none;
+}

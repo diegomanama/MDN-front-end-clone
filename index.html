@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/styles/general-style.css">
-    <link rel="stylesheet" href="src/styles/header-and-navigation.css">
-    <link rel="stylesheet" href="src/styles/main-content.css">
-    <link rel="stylesheet" href="src/styles/footer.css">
-    <link rel="stylesheet" href="src/styles/dynamic-styles.css">
-    <link rel="stylesheet" href="src/styles/popup-notice.css">
-    <link rel="stylesheet" href="src/styles/mobile-ini-index.css">
+    <link rel="stylesheet" href="./src/styles/layers.css">
     <script type="module" src="src/scripts/main.js"></script>
     <script type="module" src="src/scripts/popup-notice.js"></script>
     <script type="module" src="src/scripts/mobile-ini-index.js"></script>
+    <script type="module" src="src/scripts/menu.js"></script>
 </head>
 <body class="overflow-visible">
     <div class="popup-wrapper">
@@ -31,6 +26,195 @@
         <div class="top-navigation-wrapper">
             <ion-icon class="menu-button" name="menu-sharp"></ion-icon>
         </div>
+        <menu class="menu">
+            <li>
+                <button class="expand-button select-theme theme">
+                    <ion-icon name="contrast" class="contrast no-clickable" aria-hidden="true"></ion-icon>
+                    <span class="text-wrapper no-clickable">Theme</span>
+                    <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden="true"></ion-icon>
+                </button>
+                <menu class="expandable-list theme-options theme">
+                    <li class="theme-option default-theme">
+                        <ion-icon name="contrast" class="contrast" aria-hidden="true"></ion-icon>
+                        <span class="text-wrapper">OS Default</span>
+                    </li>
+                    <li class="theme-option light-theme">
+                        <ion-icon name="sunny" class="sunny" aria-hidden="true"></ion-icon>
+                        <span class="text-wrapper">Light</span>
+                    </li>
+                    <li class="theme-option dark-theme">
+                        <ion-icon name="moon" class="moon" aria-hidden="true"></ion-icon>
+                        <span class="text-wrapper">Dark</span>
+                    </li>
+                </menu>
+            </li>
+            <li>
+                <menu class="account-options">
+                    <li><button type="button" class="account-action-button login-button">Log in</button></li>
+                    <li><button type="button" class="account-action-button signup-button">Sign up for free</button></li>
+                </menu>
+            </li>
+            <li>
+                <search class="search-bar">
+                    <ion-icon name="search"></ion-icon>
+                </search>
+            </li>
+            <li>
+                <menu class="website-navigation">
+                    <li>
+                        <button class="expand-button references">
+                            <span class="text-wrapper no-clickable">References</span>
+                            <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden=""></ion-icon>
+                        </button>
+                        <nav>
+                            <ul class="expandable-list references">
+                                <li class="navigation-item">
+                                    <a href="#overview">
+                                        <span class="text-wrapper">Overview / Web Technology</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#html">
+                                        <span class="text-wrapper">HTML</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#css">
+                                        <span class="text-wrapper">CSS</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#javascript">
+                                        <span class="text-wrapper">JavaScript</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#http">
+                                        <span class="text-wrapper">HTTP</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#web-apis">
+                                        <span class="text-wrapper">Web APIs</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#web-extensions">
+                                        <span class="text-wrapper">Web Extensions</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#accessibility">
+                                        <span class="text-wrapper">Accessibility</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <button class="expand-button learn">
+                            <span class="text-wrapper no-clickable">Learn</span>
+                            <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden=""></ion-icon>
+                        </button>
+                        <nav>
+                            <ul class="expandable-list learn">
+                                <li class="navigation-item">
+                                    <a href="#overview-mdn">
+                                        <span class="text-wrapper">Overview / MDN Learning Area</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#html-mdn">
+                                        <span class="text-wrapper">HTML</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#css-mdn">
+                                        <span class="text-wrapper">CSS</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#javascript-mdn">
+                                        <span class="text-wrapper">JavaScript</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#accessibility-mdn">
+                                        <span class="text-wrapper">Accessibility</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <button class="expand-button plus">
+                            <span class="text-wrapper no-clickable">Plus</span> 
+                            <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden=""></ion-icon>
+                        </button>
+                        <nav>
+                            <ul class="expandable-list plus">
+                                <li class="navigation-item">
+                                    <a href="#overview-plus">
+                                        <span class="text-wrapper">Overview</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#ai-help">
+                                        <span class="text-wrapper">AI Help</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#updates">
+                                        <span class="text-wrapper">Updates</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#documentation">
+                                        <span class="text-wrapper">Documentation</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#faq">
+                                        <span class="text-wrapper">FAQ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li>
+                        <a href="" class="top-level-link">Curriculum</a>
+                    </li>
+                    <li>
+                        <a href="" class="top-level-link">Blog</a>
+                    </li>
+                    <li>
+                        <button class="expand-button tools">
+                            <span class="text-wrapper no-clickable">Tools</span>
+                            <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden=""></ion-icon>
+                        </button>
+                        <nav>
+                            <ul class="expandable-list tools">
+                                <li class="navigation-item">
+                                    <a href="#playground">
+                                        <span class="text-wrapper">Playground</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#http-observatory">
+                                        <span class="text-wrapper">HTTP Observatory</span>
+                                    </a>
+                                </li>
+                                <li class="navigation-item">
+                                    <a href="#ai-help-tools">
+                                        <span class="text-wrapper">AI Help</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </menu>
+            </li>
+        </menu>
         <div class="article-actions-wrapper">
             <ion-icon class="sidebar-button" name="list"></ion-icon>
             <nav></nav>

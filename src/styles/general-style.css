@@ -39,7 +39,7 @@ a {
 
 a:focus {
     outline: 2px solid var(--link-color);
-    border-radius: 5px;
+    border-radius: var(--staple-corner-radius);
 }
 
 a:hover {

@@ -16,7 +16,7 @@ main {
         font-weight: bold;
         padding: 1rem;
         border: 1px solid var(--border-color);
-        border-radius: 5px;
+        border-radius: var(--staple-corner-radius);
     }
 }
 
@@ -39,7 +39,7 @@ article {
 } /* This's h1's class */
 
 .contribution {
-    border-radius: 5px;
+    border-radius: var(--staple-corner-radius);
     border: 1px solid var(--border-color);
     padding: 2rem 1.5rem;
     margin-block: 3.2rem;
@@ -74,7 +74,7 @@ article {
 .feedback-buttons {
     block-size: 3rem;
     inline-size: 7rem;
-    border-radius: 5px;
+    border-radius: var(--staple-corner-radius);
     border: 1px solid black;
     padding-inline-start: 2.5rem;
     background-color: var(--secondary-bg-color);

@@ -36,7 +36,7 @@
         margin-inline: auto;
         padding-block: 1.5rem;
         padding-inline: 2.5rem;
-        border-radius: 5px;
+        border-radius: var(--staple-corner-radius);
         border: 1px solid black;
     }
 }

@@ -17,6 +17,7 @@
     --visited-link-color: #483879;
     --positive-feedback-color: #007836;
     --negative-feedback-color: #c80538;
+    --section-inline-space: 1.6rem;
 }
 
 html {

@@ -1,5 +1,5 @@
 main {
-    padding-inline: 1.5rem;
+    padding-inline: var(--section-inline-space);
     margin-block-start: 9.6rem;
     position: relative;
     display: flow-root;

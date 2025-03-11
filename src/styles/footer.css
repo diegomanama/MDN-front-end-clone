@@ -1,5 +1,5 @@
 footer {
-    padding: 3.2rem 1.6rem;
+    padding: 3.2rem var(--section-inline-space);
     background-color: var(--secondary-bg-color);
     color: var(--primary-color);
     user-select: none;

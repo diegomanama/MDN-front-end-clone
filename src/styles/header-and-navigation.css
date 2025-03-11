@@ -9,7 +9,7 @@ header {
 }
 
 .top-navigation-wrapper {
-    padding-inline: 1.6rem;
+    padding-inline: var(--section-inline-space);
     block-size: 6.4rem;
     display: flex;
     flex-direction: row-reverse;
@@ -28,7 +28,7 @@ header {
 
 .article-actions-wrapper {
     block-size: 3.2rem;
-    padding-inline-end: 1.6rem;
+    padding-inline-end: var(--section-inline-space);
     border: 1px solid var(--border-color);
     background-color: var(--secondary-bg-color);
     display: grid;

@@ -16,7 +16,7 @@
     left: 0;
     right: 25vw;
     max-width: 30rem;
-    padding-inline: 1.5rem;
+    padding-inline-start: var(--section-inline-space);
     overflow-y: scroll;
     background-color: var(--secondary-bg-color);
 }

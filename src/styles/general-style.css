@@ -18,6 +18,7 @@
     --positive-feedback-color: #007836;
     --negative-feedback-color: #c80538;
     --section-inline-space: 1.6rem;
+    --staple-content-block-margin: 1.6rem;
 }
 
 html {
@@ -119,6 +120,7 @@ th, td {
     border-radius: var(--staple-corner-radius);
     /* background: no-repeat top 2rem left 2rem url(/media/note-info.svg), var(--info-note-bg-color); */
     box-shadow: -2px 0px var(--info-note-inner-shadow-color);
+    margin-block: var(--staple-content-block-margin);
 
     .warning-wrapper {
         padding-top: var(--padding);

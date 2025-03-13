@@ -1,15 +1,13 @@
 main {
     padding-inline: var(--section-inline-space);
     margin-block-start: 9.6rem;
-    position: relative;
     display: flow-root;
     user-select: none;
 }
 
 .articles-navigation-buttons {
     display: flex;
-    justify-content: center;
-    gap: 0.75rem;
+    justify-content: space-between;
 
     a {
         font-size: 1.3rem;
@@ -20,23 +18,12 @@ main {
     }
 }
 
-.articles-navigation-buttons:nth-of-type(1) {
-    position: absolute;
-    top: 9rem;
-    left: 0;
-    right: 0;
-}
-
 article {
 
     a:visited {
         color: var(--visited-link-color)
     }
 }
-
-.title {
-    margin-block-end: 9rem;
-} /* This's h1's class */
 
 .contribution {
     border-radius: var(--staple-corner-radius);

@@ -1,5 +1,5 @@
 {
-  "name": "mdn-layout-recreation",
+  "name": "mdn-article-layout-recreation",
   "version": "1.0.0",
   "description": "A MDN articles' layout recreation",
   "main": "index.html",

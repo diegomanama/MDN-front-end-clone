@@ -1,7 +1,7 @@
 @layer default {
     .menu {
         display: none;
-        background-color: var(--primary-bg-color);
+        background-color: var(--primary-background-color);
         padding-inline: var(--section-inline-space);
         flex-direction: column;
         gap: 1.5rem;
@@ -19,7 +19,7 @@
 }
 
 .select-theme, .theme-option {
-    color: var(--primary-color);
+    color: var(--primary-foreground-color);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -66,7 +66,7 @@
 }
 
 .login-button {
-    background-color: var(--primary-bg-color);
+    background-color: var(--primary-background-color);
 }
 
 .signup-button {
@@ -79,7 +79,7 @@
     justify-content: flex-end;
     align-items: center;
     padding-inline: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--secondary-foreground-color);
     border-radius: 3.5rem;
     height: 3.5rem;
 }
@@ -89,7 +89,7 @@
     padding-inline-start: 0;
 
     > li {
-        border-block-start: 1px solid var(--border-color);
+        border-block-start: 1px solid var(--secondary-foreground-color);
     }
 }
 
@@ -99,8 +99,8 @@
         padding: 1.5rem;
         padding-inline: 1rem;
         font-size: medium;
-        color: var(--primary-color);
-        background-color: var(--primary-bg-color);
+        color: var(--primary-foreground-color);
+        background-color: var(--primary-background-color);
     }
     
     .expand-button {

@@ -4,7 +4,7 @@ header {
     left: 0;
     right: 0;
     z-index: 3;
-    background-color: var(--primary-bg-color);
+    background-color: var(--primary-background-color);
     user-select: none;
 }
 
@@ -29,8 +29,8 @@ header {
 .article-actions-wrapper {
     block-size: 3.2rem;
     padding-inline-end: var(--section-inline-space);
-    border: 1px solid var(--border-color);
-    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--secondary-foreground-color);
+    background-color: var(--secondary-background-color);
     display: grid;
     grid-template-columns: 3.2rem 1fr 3.2rem;
     align-items: center;

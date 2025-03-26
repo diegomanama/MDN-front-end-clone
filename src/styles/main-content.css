@@ -13,7 +13,7 @@ main {
         font-size: 1.3rem;
         font-weight: bold;
         padding: 1rem;
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--secondary-foreground-color);
         border-radius: var(--staple-corner-radius);
     }
 }
@@ -27,10 +27,10 @@ article {
 
 .contribution {
     border-radius: var(--staple-corner-radius);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--secondary-foreground-color);
     padding: 2rem 1.5rem;
     margin-block: 3.2rem;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--secondary-background-color);
     position: relative;
     display: flex;
     flex-flow: column;
@@ -64,7 +64,7 @@ article {
     border-radius: var(--staple-corner-radius);
     border: 1px solid black;
     padding-inline-start: 2.5rem;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--secondary-background-color);
     position: relative;
 }
 
@@ -86,5 +86,5 @@ article {
     position: absolute;
     top: 2rem;
     right: 1.5rem;
-    color: var(--link-color);
+    color: var(--highlight-color);
 }

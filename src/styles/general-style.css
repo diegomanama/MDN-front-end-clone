@@ -5,15 +5,14 @@
 } */
 
 :root {
-    --primary-color: #4e4e4e;
-    --primary-bg-color: #ffffff;
-    --secondary-bg-color: #f9f9fb;
+    --primary-foreground-color: #4e4e4e;
+    --secondary-foreground-color: #7a7a7a;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #f9f9fb;
+    --highlight-color: #2471b4;
     --staple-corner-radius: 5px;
-    --code-snnipet-bg-color: #f1f1f1;
-    --info-note-bg-color: #e5f3fe;
-    --info-note-inner-shadow-color: #2471b4;
-    --border-color: #a5a5a5;
-    --link-color: #2471b4;
+    --code-snnipet-background-color: #f1f1f1;
+    --info-note-background-color: #e5f3fe;
     --visited-link-color: #483879;
     --positive-feedback-color: #007836;
     --negative-feedback-color: #c80538;
@@ -36,11 +35,11 @@ h1 {
 }
 
 a {
-    color: var(--link-color);
+    color: var(--highlight-color);
 }
 
 a:focus {
-    outline: 2px solid var(--link-color);
+    outline: 2px solid var(--highlight-color);
     border-radius: var(--staple-corner-radius);
 }
 
@@ -51,14 +50,14 @@ a:hover {
 /* Tables */
 
 table {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--secondary-foreground-color);
     text-align: left;
     border-collapse: collapse;
 }
 
 th, td {
     padding: 1.5rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--secondary-foreground-color);
 }
 
 /* code snippets */
@@ -73,7 +72,7 @@ th, td {
         border-radius: var(--staple-corner-radius);
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        background: var(--code-snnipet-bg-color);
+        background: var(--code-snnipet-background-color);
         display: block;
     }
 }
@@ -83,12 +82,12 @@ th, td {
 
     block-size: var(--snnipet-header-height);
     padding-inline: 1.5rem;
-    border-block-end: 1px solid var(--border-color);
+    border-block-end: 1px solid var(--secondary-foreground-color);
     border-radius: var(--staple-corner-radius);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-sizing: border-box;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--secondary-background-color);
     font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
@@ -119,7 +118,7 @@ th, td {
     padding-inline-start: var(--padding-inline-start);
     border-radius: var(--staple-corner-radius);
     /* background: no-repeat top 2rem left 2rem url(/media/note-info.svg), var(--info-note-bg-color); */
-    box-shadow: -2px 0px var(--info-note-inner-shadow-color);
+    box-shadow: -2px 0px var(--highlight-color);
     margin-block: var(--staple-content-block-margin);
 
     .warning-wrapper {

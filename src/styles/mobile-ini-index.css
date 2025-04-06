@@ -3,10 +3,20 @@
     position: fixed;
     top: 9.6rem;
     bottom: 0;
-    left: 0;
+    left: -30rem;
     right: 25vw;
     max-width: 30rem;
     padding-inline-start: var(--section-inline-space);
     overflow-y: scroll;
     background-color: var(--secondary-background-color);
+    transition: display 1s allow-discrete,
+                left 1s ease-in-out;
+
+    @starting-style {
+        left: -30rem;
+    }
+}
+
+.on-screen {
+    left: 0rem;
 }

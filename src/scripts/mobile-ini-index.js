@@ -25,6 +25,7 @@ function makeSelectable(elements) {
 
 function closeSidebar() {
   iniIndex.classList.replace("visible", "invisible");
+  iniIndex.classList.toggle("on-screen");
   document.body.classList.replace("overflow-hidden", "overflow-visible");
   makeSelectable(pageSections);
   lighten();
@@ -32,6 +33,7 @@ function closeSidebar() {
 
 function openSidebar() {
   iniIndex.classList.replace("invisible", "visible");
+  iniIndex.classList.toggle("on-screen");
   document.body.classList.replace("overflow-visible", "overflow-hidden");
   makeUnselectable(pageSections);
   darken();

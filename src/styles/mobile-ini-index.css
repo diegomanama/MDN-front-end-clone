@@ -11,12 +11,12 @@
     background-color: var(--secondary-background-color);
     transition: display 1s allow-discrete,
                 left 1s ease-in-out;
-
-    @starting-style {
-        left: -30rem;
-    }
 }
 
 .on-screen {
     left: 0rem;
+
+    @starting-style {
+        left: -30rem;
+    }
 }

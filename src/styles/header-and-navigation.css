@@ -6,6 +6,8 @@ header {
     z-index: 3;
     background-color: var(--primary-background-color);
     user-select: none;
+    filter: blur(var(--blur));
+    user-select: none;
 }
 
 .top-navigation-wrapper {

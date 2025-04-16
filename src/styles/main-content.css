@@ -3,6 +3,8 @@ main {
     margin-block-start: 9.6rem;
     display: flow-root;
     user-select: none;
+    filter: blur(var(--blur));
+    user-select: none;
 }
 
 .articles-navigation-buttons {

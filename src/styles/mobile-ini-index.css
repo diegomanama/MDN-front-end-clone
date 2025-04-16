@@ -9,6 +9,7 @@
     padding-inline-start: var(--section-inline-space);
     overflow-y: scroll;
     background-color: var(--secondary-background-color);
+    display: none;
     transition: display 1s allow-discrete,
                 left 1s ease-in-out;
 }

@@ -3,6 +3,8 @@ footer {
     background-color: var(--secondary-background-color);
     color: var(--primary-foreground-color);
     user-select: none;
+    filter: blur(var(--blur));
+    user-select: none;
 
     h2 {
         margin-block-start: 0;

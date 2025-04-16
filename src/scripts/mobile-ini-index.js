@@ -2,55 +2,21 @@ import {darkeningCover, pageSections} from "./main.js";
 const sidebarButton = document.querySelector('.sidebar-button');
 const iniIndex = document.querySelector('.mobile-ini-index');
 
-function darken() {
-  darkeningCover.style.zIndex = '1';
-  document.body.appendChild(darkeningCover);
-}
-
-function lighten() {
-  darkeningCover.remove();
-}
-
-function makeUnselectable(elements) {
+function toggleSelectableState(elements) {
   for (const element of elements) {
-    element.classList.replace("selectable", "unselectable");
+    element.classList.toggle("selectable");
   }
 }
 
-function makeSelectable(elements) {
-  for (const element of elements) {
-    element.classList.replace("unselectable", "selectable");
-  }
-}
-
-function closeSidebar() {
-  iniIndex.classList.replace("visible", "invisible");
+function showHideSidebar() {
+  iniIndex.classList.toggle("visible");
   iniIndex.classList.toggle("on-screen");
-  document.body.classList.replace("overflow-hidden", "overflow-visible");
-  makeSelectable(pageSections);
-  lighten();
+  darkeningCover.classList.toggle("invisible");
+  darkeningCover.classList.toggle("z-index-1");
+  document.body.classList.toggle("overflow-hidden");
+  toggleSelectableState(pageSections);
 }
 
-function openSidebar() {
-  iniIndex.classList.replace("invisible", "visible");
-  iniIndex.classList.toggle("on-screen");
-  document.body.classList.replace("overflow-visible", "overflow-hidden");
-  makeUnselectable(pageSections);
-  darken();
-}
+sidebarButton.addEventListener('click', showHideSidebar)
 
-sidebarButton.addEventListener('click', () => {
-  if (iniIndex.classList.contains("invisible")) {
-    openSidebar();
-  } else 
-  if (iniIndex.classList.contains("visible")) {
-    closeSidebar();
-  }
-})
-
-darkeningCover.addEventListener('click', () => {
-  closeSidebar();
-})
-
-
-
+darkeningCover.addEventListener('click', showHideSidebar)

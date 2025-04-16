@@ -18,6 +18,7 @@
     --negative-feedback-color: #c80538;
     --section-inline-space: 1.6rem;
     --staple-content-block-margin: 1.6rem;
+    --blur: 5px;
 }
 
 html {

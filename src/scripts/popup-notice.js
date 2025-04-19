@@ -13,8 +13,3 @@ closeBtn.addEventListener("click", () => {
         }
     );
 });
-
-
-
-
-

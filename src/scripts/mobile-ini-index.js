@@ -11,8 +11,10 @@ function toggleSelectableState(elements) {
 function showHideSidebar() {
   iniIndex.classList.toggle("visible");
   iniIndex.classList.toggle("on-screen");
+  darkeningCover.classList.add("transitions-enabled");
   darkeningCover.classList.toggle("invisible");
-  darkeningCover.classList.toggle("z-index-1");
+  darkeningCover.classList.toggle("fade-out");
+  darkeningCover.classList.add("z-index-1");
   document.body.classList.toggle("overflow-hidden");
   toggleSelectableState(pageSections);
 }

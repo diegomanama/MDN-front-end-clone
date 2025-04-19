@@ -140,3 +140,29 @@ th, td {
         color: #2471b4;
     }
 }
+
+/* Darkening cover */
+
+.darkening-cover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0);
+    opacity: 0.5;
+    z-index: 4;
+}
+
+.darkening-cover.fade-out {
+    opacity: 0;
+}
+
+.darkening-cover.transitions-enabled {
+    transition: display 1s allow-discrete,
+                opacity 1s ease-in-out;
+
+    @starting-style {
+        opacity: 0;
+    }
+}

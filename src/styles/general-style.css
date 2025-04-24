@@ -1,9 +1,3 @@
-/* @property --border-color {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #a5a5a5;
-} */
-
 :root {
     --primary-foreground-color: #4e4e4e;
     --secondary-foreground-color: #7a7a7a;

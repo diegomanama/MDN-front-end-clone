@@ -1,15 +1,6 @@
-import {darkeningCover, pageSections} from "./main.js";
-const popupWrapper = document.querySelector(".popup-wrapper");
-const closeBtn = document.querySelector(".close-btn");
+const popupNotice = document.querySelector(".popup-notice");
+const closeBtn = document.querySelector(".popup-notice .close-btn");
 
-closeBtn.addEventListener("click", () => {
-    popupWrapper.classList.toggle("invisible");
-    darkeningCover.classList.toggle("invisible");
-    darkeningCover.classList.toggle("fade-out");
+popupNotice.showModal();
 
-    pageSections.forEach((element) => {
-        element.classList.toggle("clear");
-        element.classList.toggle("selectable");
-        }
-    );
-});
+closeBtn.addEventListener("click", () => popupNotice.close());

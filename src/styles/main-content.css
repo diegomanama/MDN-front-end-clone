@@ -2,8 +2,6 @@ main {
     padding-inline: var(--section-inline-space);
     margin-block-start: 9.6rem;
     display: flow-root;
-    user-select: none;
-    filter: blur(var(--blur));
 }
 
 .articles-navigation-buttons {

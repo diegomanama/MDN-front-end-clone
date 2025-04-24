@@ -11,17 +11,16 @@
     <script type="module" src="src/scripts/menu.js"></script>
 </head>
 <body>
-    <div class="popup-wrapper">
-        <div class="popup-notice">
-            <p class="selectable">This layout is a recreation of the MDN articles' layout. I created it to practice core web technologies: HTML, CSS, and JavaScript.</p>
-            <ul>
-                <li class="selectable">The original layout, which this one is based on, can be found in any article on <a href="https://developer.mozilla.org/en-US/">MDN</a>.</li>
-                <li class="selectable">I recreated the layout by observing the original and aiming for a similar visual output, writing my own code from scratch without looking at the original source code.</li>
-                <li class="selectable">I replaced all <a href="https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license#logos_trademarks_service_marks_and_wordmarks">logos, trademarks, service marks, wordmarks, and non-free icons</a> with <a href="https://ionic.io/ionicons">ionicons</a>.</li>
-            </ul>
-            <button class="close-btn">I understand</button>
-        </div>
-    </div>
+    <dialog class="popup-notice">
+        <h2 class="popup-title">Notice</h2>
+        <p class="selectable">This layout is a recreation of the MDN articles' layout. I created it to practice core web technologies: HTML, CSS, and JavaScript.</p>
+        <ul>
+            <li class="selectable">The original layout, which this one is based on, can be found in any article on <a href="https://developer.mozilla.org/en-US/">MDN</a>.</li>
+            <li class="selectable">I recreated the layout by observing the original and aiming for a similar visual output, writing my own code from scratch without looking at the original source code.</li>
+            <li class="selectable">I replaced all <a href="https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license#logos_trademarks_service_marks_and_wordmarks">logos, trademarks, service marks, wordmarks, and non-free icons</a> with <a href="https://ionic.io/ionicons">ionicons</a>.</li>
+        </ul>
+        <button class="close-btn" autofocus>I understand</button>
+    </dialog>
     <header>
         <div class="top-navigation-wrapper">
             <ion-icon class="menu-button" name="menu-sharp"></ion-icon>

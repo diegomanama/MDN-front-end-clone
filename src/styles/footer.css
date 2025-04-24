@@ -2,8 +2,6 @@ footer {
     padding: 3.2rem var(--section-inline-space);
     background-color: var(--secondary-background-color);
     color: var(--primary-foreground-color);
-    user-select: none;
-    filter: blur(var(--blur));
 
     h2 {
         margin-block-start: 0;

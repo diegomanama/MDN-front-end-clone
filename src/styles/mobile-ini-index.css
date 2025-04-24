@@ -10,8 +10,8 @@
     overflow-y: scroll;
     background-color: var(--secondary-background-color);
     display: none;
-    transition: display 1s allow-discrete,
-                left 1s ease-in-out;
+    transition: display 0.25s allow-discrete,
+                left 0.25s ease-in-out;
 }
 
 .on-screen {
@@ -32,8 +32,8 @@
     opacity: 0;
     z-index: 1;
     display: none;
-    transition: display 1s allow-discrete,
-                opacity 1s ease-in-out;
+    transition: display 0.25s allow-discrete,
+                opacity 0.25s ease-in-out;
 }
 
 .darkening-cover.fade-in {

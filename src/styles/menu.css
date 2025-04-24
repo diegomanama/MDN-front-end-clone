@@ -112,6 +112,10 @@
             font-size: 2rem;
         }
     }
+
+    .expand-button .no-clickable {
+        pointer-events: none;
+    }
 }
 
 .top-level-link, .navigation-item a {

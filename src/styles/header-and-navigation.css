@@ -1,47 +1,49 @@
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    background-color: var(--primary-background-color);
-}
-
-.top-navigation-wrapper {
-    padding-inline: var(--section-inline-space);
-    block-size: 6.4rem;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-logo {
-    max-width: 16rem;
-}
-
-.menu-button {
-    inline-size: 3.2rem;
-    block-size: inherit;
-}
-
-.article-actions-wrapper {
-    block-size: 3.2rem;
-    padding-inline-end: var(--section-inline-space);
-    border: 1px solid var(--secondary-foreground-color);
-    background-color: var(--secondary-background-color);
-    display: grid;
-    grid-template-columns: 3.2rem 1fr 3.2rem;
-    align-items: center;
-    justify-items: center;
-
-    .sidebar-button {
-        block-size: inherit;
-        inline-size: 2rem;
+@layer initial-render {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        background-color: var(--primary-background-color);
     }
-
-    .article-actions-button {
+    
+    .top-navigation-wrapper {
+        padding-inline: var(--section-inline-space);
+        block-size: 6.4rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-logo {
+        max-width: 16rem;
+    }
+    
+    .menu-button {
+        inline-size: 3.2rem;
         block-size: inherit;
-        inline-size: 2rem;
+    }
+    
+    .article-actions-wrapper {
+        block-size: 3.2rem;
+        padding-inline-end: var(--section-inline-space);
+        border: 1px solid var(--secondary-foreground-color);
+        background-color: var(--secondary-background-color);
+        display: grid;
+        grid-template-columns: 3.2rem 1fr 3.2rem;
+        align-items: center;
+        justify-items: center;
+    
+        .sidebar-button {
+            block-size: inherit;
+            inline-size: 2rem;
+        }
+    
+        .article-actions-button {
+            block-size: inherit;
+            inline-size: 2rem;
+        }
     }
 }

@@ -1,45 +1,58 @@
-.mobile-ini-index {
-    z-index: 2;
-    position: fixed;
-    top: 9.6rem;
-    bottom: 0;
-    left: -30rem;
-    right: 25vw;
-    max-width: 30rem;
-    padding-inline-start: var(--section-inline-space);
-    overflow-y: scroll;
-    background-color: var(--secondary-background-color);
-    display: none;
-    transition: display 0.25s allow-discrete,
-                left 0.25s ease-in-out;
-}
-
-.on-screen {
-    left: 0rem;
-
-    @starting-style {
+@layer initial-render {
+    .mobile-ini-index {
+        z-index: 2;
+        position: fixed;
+        top: 9.6rem;
+        bottom: 0;
         left: -30rem;
+        right: 25vw;
+        max-width: 30rem;
+        padding-inline-start: var(--section-inline-space);
+        overflow-y: scroll;
+        background-color: var(--secondary-background-color);
+        display: none;
+        transition: display 0.25s allow-discrete,
+                    left 0.25s ease-in-out;
+    }
+    
+    .darkening-cover {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0);
+        opacity: 0;
+        z-index: 1;
+        display: none;
+        transition: display 0.25s allow-discrete,
+                    opacity 0.25s ease-in-out;
     }
 }
 
-.darkening-cover {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0);
-    opacity: 0;
-    z-index: 1;
-    display: none;
-    transition: display 0.25s allow-discrete,
-                opacity 0.25s ease-in-out;
-}
+@layer post-initial-render {
+    body.overflow-hidden {
+        overflow-y: hidden;
+    }
 
-.darkening-cover.fade-in {
-    opacity: 0.5;
+    .mobile-ini-index.on-screen {
+        left: 0rem;
+    
+        @starting-style {
+            left: -30rem;
+        }
+    }
 
-    @starting-style {
-        opacity: 0;
+    .darkening-cover.fade-in {
+        opacity: 0.5;
+    
+        @starting-style {
+            opacity: 0;
+        }
+    }
+
+    .mobile-ini-index.visible,
+    .darkening-cover.visible {
+        display: block;
     }
 }

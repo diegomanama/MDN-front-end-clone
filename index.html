@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="src/styles/footer.css">
     <link rel="stylesheet" href="src/styles/menu.css">
     <link rel="stylesheet" href="src/styles/mobile-ini-index.css">
+    <link rel="stylesheet" href="src/styles/article-actions.css">
     <script type="module" src="src/scripts/main.js"></script>
     <script type="module" src="src/scripts/popup-notice.js"></script>
     <script type="module" src="src/scripts/mobile-ini-index.js"></script>
     <script type="module" src="src/scripts/menu.js"></script>
+    <script type="module" src="src/scripts/article-action.js"></script>
 </head>
 <body>
     <dialog class="popup-notice">
@@ -224,7 +226,7 @@
         <div class="article-actions-wrapper">
             <ion-icon class="sidebar-button" name="list"></ion-icon>
             <nav></nav>
-            <ion-icon class="article-actions-button" name="ellipsis-vertical"></ion-icon>
+            <ion-icon class="open-article-actions-button" name="ellipsis-vertical"></ion-icon>
         </div>
     </header>
     <main>
@@ -356,6 +358,40 @@
             </div>
         </div>
     </footer>
+    <dialog class="article-actions">
+        <button class="close-article-actions-button">
+            <ion-icon name="close-outline" class="close icon" aria-hidden="true"></ion-icon>
+            <span class="text-wrapper">Article Actions</span>
+        </button>
+        <div class="language-options-wrapper">
+            <button class="expand-button show-language-options-button">
+                <div class="wrapper">
+                    <ion-icon name="globe-outline" class="globe no-clickable" aria-hidden="true"></ion-icon>
+                <span class="text-wrapper no-clickable">English (US)</span>
+                </div>
+                <ion-icon name="chevron-down" class="chevron no-clickable icon" aria-hidden="true"></ion-icon>
+            </button>
+            <div class="remember-language-toggle-wrapper">
+                <ion-icon name="toggle" class="icon"></ion-icon>
+                <span>Remember language</span>
+                <ion-icon name="help-circle" class="icon"></ion-icon>
+            </div>
+            <nav class="language-options">
+                <ul>
+                    <li class="english-us">
+                        <a href="">
+                            <span class="text-wrapper">English (US)</span>
+                        </a>
+                    </li>
+                    <li class="español">
+                        <a href="">
+                            <span class="text-wrapper">Español</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
+    </dialog>
     <aside class="mobile-ini-index">
         <nav>
             <h2>On this page</h2>

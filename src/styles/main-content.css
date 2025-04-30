@@ -68,9 +68,16 @@
         position: relative;
     }
     
-    .yes, .no {
+    .thumbs-up,
+    .thumbs-down {
         position: absolute;
         left: 1rem;
+    }
+
+    .feedback-buttons.yes:hover {
+        border: var(--positive-feedback-color);
+        background-color: var(--positive-feedback-color);
+        color: white;
     }
     
     .feedback-buttons.no:hover {

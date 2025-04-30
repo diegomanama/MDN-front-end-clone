@@ -79,4 +79,14 @@
         flex-wrap: wrap;
         gap: 0.8rem 1.6rem;
     }
+
+    .social-networks {
+        display: flex;
+        gap: 2rem;
+        margin-block-start: 1.5rem;
+    }
+
+    .social-icon {
+        font-size: 2.2rem;
+    }
 }

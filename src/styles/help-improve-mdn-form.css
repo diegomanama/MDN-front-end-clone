@@ -1,0 +1,120 @@
+@layer initial-render {
+    .help-improve-mdn-form {
+        border-radius: var(--staple-corner-radius);
+        border: 1px solid var(--secondary-foreground-color);
+        padding: 2rem 1.5rem;
+        margin-block: 3.2rem;
+        margin-inline: 1.6rem;
+        background-color: var(--secondary-background-color);
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        gap: 3.2rem;
+    
+        /* childs' typography & links' style */
+    
+        h2 {
+            font-size: x-large;
+            font-weight: normal;
+        }
+    
+        a:link {
+            text-decoration: none;
+        }
+        
+        /* childs' spacing */
+    
+        h2, .open-source :first-child {
+            margin-block-start: 0;
+        }
+    
+        .contribution-content > :last-child,
+        .contribution-footer > :last-child {
+            margin-block-end: 0;
+        }
+    
+        .feedback-response {
+            display: none;
+            margin-block-end: 4.6rem;
+        }
+    }
+    
+    .feedback-button {
+        block-size: 3rem;
+        inline-size: 7rem;
+        border-radius: var(--staple-corner-radius);
+        border: 1px solid black;
+        padding-inline-start: 2.5rem;
+        background-color: var(--secondary-background-color);
+        position: relative;
+        font-weight: bold;
+    }
+    
+    .thumbs-up,
+    .thumbs-down {
+        position: absolute;
+        left: 1rem;
+    }
+    
+    .feedback-button.yes:hover {
+        border: var(--positive-feedback-color);
+        background-color: var(--positive-feedback-color);
+        color: white;
+    }
+    
+    .feedback-button.no:hover {
+        border: var(--negative-feedback-color);
+        background-color: var(--negative-feedback-color);
+        color: white;
+    }
+    
+    .help-icon {
+        inline-size: 20%;
+        block-size: 12rem;
+        max-inline-size: 12rem;
+        position: absolute;
+        top: 2rem;
+        right: 1.5rem;
+        color: var(--highlight-color);
+    }
+    
+    .feedback-response {
+        display: none;
+    }
+    
+    .negative-feedback-options-wrapper,
+    .negative-feedback-submit-button {
+        display: none;
+    }
+    
+    .negative-feedback-submit-button {
+        block-size: 3rem;
+        inline-size: 7rem;
+        border-radius: var(--staple-corner-radius);
+        border: 1px solid black;
+        background-color: var(--secondary-background-color);
+        position: relative;
+        font-weight: bold;
+    }
+
+    .negative-feedback-submit-button:hover {
+        border: var(--primary-foreground-color);
+        background-color: var(--primary-foreground-color);
+        color: var(--primary-background-color);
+    }
+}
+
+@layer post-initial-render {
+    .feedback-question.hidden,
+    .feedback-buttons-wrapper.hidden,
+    .negative-feedback-options-wrapper.hidden,
+    .negative-feedback-submit-button.hidden {
+        display: none;
+    }
+
+    .feedback-response.visible,
+    .negative-feedback-options-wrapper.visible,
+    .negative-feedback-submit-button.visible {
+        display: block;
+    }
+}

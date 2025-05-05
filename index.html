@@ -13,11 +13,13 @@
     <link rel="stylesheet" href="src/styles/menu.css">
     <link rel="stylesheet" href="src/styles/mobile-ini-index.css">
     <link rel="stylesheet" href="src/styles/article-actions.css">
+    <link rel="stylesheet" href="src/styles/help-improve-mdn-form.css">
     <script type="module" src="src/scripts/main.js"></script>
     <script type="module" src="src/scripts/popup-notice.js"></script>
     <script type="module" src="src/scripts/mobile-ini-index.js"></script>
     <script type="module" src="src/scripts/menu.js"></script>
     <script type="module" src="src/scripts/article-action.js"></script>
+    <script type="module" src="src/scripts/help-improve-mdn-form.js"></script>
 </head>
 <body>
     <dialog class="popup-notice">
@@ -279,30 +281,65 @@
                 <a href="">Next</a>
             </nav>
         </article>
-        <form class="contribution">
-            <div>
+    </main>
+    <aside>
+        <form class="help-improve-mdn-form">
+            <ion-icon class="help-icon" name="chatbubbles" alt="Two dialog clouds" aria-hidden="true"></ion-icon>
+            <div class="form-content">
                 <h2>Help improve MDN</h2>
-                <p>Was this page helpful to you?</p>
-                <!-- <img class="help-icon" src="./media/help-improve-mdn.svg" alt="Two dialog clouds"/> -->
-                <ion-icon class="help-icon" name="chatbubbles" alt="Two dialog clouds"></ion-icon>
-                <button class="feedback-buttons yes">
-                    <ion-icon class="thumbs-up" name="thumbs-up-sharp"></ion-icon>
-                    Yes</button>
-                <button class="feedback-buttons no">
-                    <ion-icon class="thumbs-down" name="thumbs-down-sharp"></ion-icon>
-                    No</button>
+                <div class="feedback-input">
+                    <p class="feedback-question">Was this page helpful to you?</p>
+                </div>
+                <div class="feedback-output">
+                    <div class="feedback-buttons-wrapper">
+                        <button class="feedback-button yes" type="button">
+                            <ion-icon class="thumbs-up" name="thumbs-up-sharp" aria-hidden="true"></ion-icon>
+                            Yes
+                        </button>
+                        <button class="feedback-button no" type="button">
+                            <ion-icon class="thumbs-down" name="thumbs-down-sharp" aria-hidden="true"></ion-icon>
+                            No
+                        </button>
+                    </div>
+                    <div class="negative-feedback-options-wrapper">
+                        <p>
+                            <label>
+                                <input type="radio" name="feedback" value="Content is out of date" class="negative-feedback-option">
+                                Content is out of date
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="radio" name="feedback" value="Missing information" class="negative-feedback-option">
+                                Missing information
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="radio" name="feedback" value="Code examples not working as expected" class="negative-feedback-option">
+                                Code examples not working as expected
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="radio" name="feedback" value="Other" class="negative-feedback-option">
+                                Other
+                            </label>
+                        </p>
+                    </div>
+                    <button type="button" class="negative-feedback-submit-button" disabled>Submit</button>
+                    <p class="feedback-response">Thank you for your feedback! ❤️</p>
+                </div>
                 <p>
                     <a href="https://github.com/mdn/content/blob/main/CONTRIBUTING.md">Learn how to contribute</a>.
                 </p>
             </div>
-            <div class="open-source">
+            <div class="form-footer">
                 <p>This page was last modified on Aug 1, 2024 by <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section/contributors.txt">MDN contributors</a>.</p>
                 <p><a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/section/index.md?plain=1">View this page on GitHub</a> • <a href="https://github.com/mdn/content/issues/new?template=page-report.yml&mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Fsection&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EPage+report+details%3C%2Fsummary%3E%0A%0A*+Folder%3A+%60en-us%2Fweb%2Fhtml%2Felement%2Fsection%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Fsection%0A*+GitHub+URL%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fblob%2Fmain%2Ffiles%2Fen-us%2Fweb%2Fhtml%2Felement%2Fsection%2Findex.md%0A*+Last+commit%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fcommit%2Fcb132bc83b660e51be8959de5336c00b08030104%0A*+Document+last+modified%3A+2024-08-01T16%3A24%3A09.000Z%0A%0A%3C%2Fdetails%3E">Report a problem with this content</a></p>
             </div>
         </form>
-        <aside></aside>
-        <aside></aside>
-    </main>
+    </aside>
     <footer>
         <div class="links-wrapper">
             <nav class="social">

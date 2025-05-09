@@ -30,7 +30,7 @@
             <li class="selectable">I recreated the layout by observing the original and aiming for a similar visual output, writing my own code from scratch without looking at the original source code.</li>
             <li class="selectable">I replaced all <a href="https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Attrib_copyright_license#logos_trademarks_service_marks_and_wordmarks">logos, trademarks, service marks, wordmarks, and non-free icons</a> with <a href="https://ionic.io/ionicons">ionicons</a>.</li>
         </ul>
-        <button class="close-btn" autofocus>I understand</button>
+        <button class="close-btn" autofocus type="button">I understand</button>
     </dialog>
     <header>
         <div class="top-navigation-wrapper">
@@ -38,7 +38,7 @@
         </div>
         <menu class="menu">
             <li>
-                <button class="expand-button select-theme theme">
+                <button class="expand-button select-theme theme" type="button">
                     <ion-icon name="contrast" class="contrast no-clickable" aria-hidden="true"></ion-icon>
                     <span class="text-wrapper no-clickable">Theme</span>
                     <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden="true"></ion-icon>
@@ -72,7 +72,7 @@
             <li>
                 <menu class="website-navigation">
                     <li>
-                        <button class="expand-button references">
+                        <button class="expand-button references" type="button">
                             <span class="text-wrapper no-clickable">References</span>
                             <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden=""></ion-icon>
                         </button>
@@ -122,7 +122,7 @@
                         </nav>
                     </li>
                     <li>
-                        <button class="expand-button learn">
+                        <button class="expand-button learn" type="button">
                             <span class="text-wrapper no-clickable">Learn</span>
                             <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden=""></ion-icon>
                         </button>
@@ -157,7 +157,7 @@
                         </nav>
                     </li>
                     <li>
-                        <button class="expand-button plus">
+                        <button class="expand-button plus" type="button">
                             <span class="text-wrapper no-clickable">Plus</span> 
                             <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden=""></ion-icon>
                         </button>
@@ -198,7 +198,7 @@
                         <a href="" class="top-level-link">Blog</a>
                     </li>
                     <li>
-                        <button class="expand-button tools">
+                        <button class="expand-button tools" type="button">
                             <span class="text-wrapper no-clickable">Tools</span>
                             <ion-icon name="chevron-down" class="chevron no-clickable" aria-hidden=""></ion-icon>
                         </button>
@@ -292,7 +292,7 @@
                 </div>
                 <div class="feedback-output">
                     <div class="feedback-buttons-wrapper">
-                        <button class="feedback-button yes" type="button">
+                        <button class="feedback-button yes" type="submit" name="useful" value="true">
                             <ion-icon class="thumbs-up" name="thumbs-up-sharp" aria-hidden="true"></ion-icon>
                             Yes
                         </button>
@@ -327,7 +327,7 @@
                             </label>
                         </p>
                     </div>
-                    <button type="button" class="negative-feedback-submit-button" disabled>Submit</button>
+                    <button type="submit" class="negative-feedback-submit-button" disabled>Submit</button>
                     <p class="feedback-response">Thank you for your feedback! ❤️</p>
                 </div>
                 <p>
@@ -418,12 +418,12 @@
         </div>
     </footer>
     <dialog class="article-actions">
-        <button class="close-article-actions-button">
+        <button class="close-article-actions-button" type="button">
             <ion-icon name="close-outline" class="close icon" aria-hidden="true"></ion-icon>
             <span class="text-wrapper">Article Actions</span>
         </button>
         <div class="language-options-wrapper">
-            <button class="expand-button show-language-options-button">
+            <button class="expand-button show-language-options-button" type="button">
                 <div class="wrapper">
                     <ion-icon name="globe-outline" class="globe no-clickable" aria-hidden="true"></ion-icon>
                 <span class="text-wrapper no-clickable">English (US)</span>

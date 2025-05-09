@@ -56,6 +56,14 @@
         gap: 0.5rem;
     }
     
+    .article-actions .help-circle {
+        color: var(--secondary-foreground-color);
+    }
+    
+    .article-actions .help-circle:hover {
+        color: var(--highlight-color);
+    }
+
     .article-actions .icon {
         font-size: 2rem;
     }
@@ -79,6 +87,12 @@
 }
 
 /* Styles for the switch toggle switch */
+
+.toggle-switch-label {
+    display: flex;
+    gap: 0.5rem;
+    line-height: 2rem;
+}
 
 .toggle-switch {
     position: relative;

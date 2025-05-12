@@ -1,5 +1,5 @@
 @layer initial-render {
-    .mobile-ini-index {
+    .content-navigation-sidebar {
         z-index: 2;
         position: fixed;
         top: 9.6rem;
@@ -35,7 +35,7 @@
         overflow-y: hidden;
     }
 
-    .mobile-ini-index.on-screen {
+    .content-navigation-sidebar.on-screen {
         left: 0rem;
     
         @starting-style {
@@ -51,7 +51,7 @@
         }
     }
 
-    .mobile-ini-index.visible,
+    .content-navigation-sidebar.visible,
     .darkening-cover.visible {
         display: block;
     }

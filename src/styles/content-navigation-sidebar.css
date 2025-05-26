@@ -1,6 +1,5 @@
 @layer initial-render {
     .content-navigation-sidebar {
-        z-index: 2;
         position: fixed;
         top: 9.6rem;
         bottom: 0;
@@ -15,18 +14,17 @@
                     left 0.25s ease-in-out;
     }
     
-    .darkening-cover {
+    .content-navigation-sidebar-wrapper {
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0);
-        opacity: 0;
+        background-color: rgba(0, 0, 0, 0);
         z-index: 1;
         display: none;
         transition: display 0.25s allow-discrete,
-                    opacity 0.25s ease-in-out;
+                    background-color 0.25s ease-in-out;
     }
 }
 
@@ -43,16 +41,16 @@
         }
     }
 
-    .darkening-cover.fade-in {
-        opacity: 0.5;
+    .content-navigation-sidebar-wrapper.fade-in {
+        background-color: rgba(0, 0, 0, 0.5);
     
         @starting-style {
-            opacity: 0;
+            background-color: rgba(0, 0, 0, 0);
         }
     }
 
     .content-navigation-sidebar.visible,
-    .darkening-cover.visible {
+    .content-navigation-sidebar-wrapper.visible {
         display: block;
     }
 }

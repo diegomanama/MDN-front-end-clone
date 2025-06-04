@@ -4,7 +4,6 @@
         border: 1px solid var(--secondary-foreground-color);
         padding: 2rem 1.5rem;
         margin-block: 3.2rem;
-        margin-inline: 1.6rem;
         background-color: var(--secondary-background-color);
         position: relative;
         display: flex;

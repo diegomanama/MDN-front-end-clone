@@ -231,115 +231,175 @@
             <ion-icon class="open-article-actions-button" name="ellipsis-vertical"></ion-icon>
         </div>
     </header>
-    <main>
-        <article>
-            <h1 class="title" >Article heading</h1>  
-            <nav class="articles-navigation-buttons">
-                <a href="">Previous</a>
-                <a href="">Overview</a>
-                <a href="">Next</a>
-            </nav>
-            <p>I'm a introductory paragraph</p>
-            <table class="prospect-table">
-                <tr>
-                    <th>Prerequisites</th>
-                    <td>A basic understanding of HTML and CSS, an understanding of what JavaScript is.</td>
-                </tr>
-                <tr>
-                    <th>Objective</th>
-                    <td>To understand that strings are objects, and learn how to use some of the basic methods available on those objects to manipulate strings.</td>
-                </tr>
-            </table>
-            <p><a href="">I'm a hiperlink</a></p>
-            <ul>
-                <li>I'm a list item</li>
-                <li>I'm a list item</li>
-                <li>I'm a list item</li>
-            </ul>
-            <div class="code-snnipet-wrapper">
-                <div class="snnipet-header">
-                    <span class="code-tagger" >CSS</span>
-                    <!-- <img class="copy-code-button" src="/media/clippy.svg" alt=""> -->
-                    <ion-icon class="copy-code-button" name="clipboard-outline"></ion-icon>
-                </div>
-                <code>
-                    h1 { <br>
-                        color: red; <br>
-                        font-size: 5em; <br>
-                    }
-                </code>
-            </div>
-            <div class="info-note">
-                <div class="warning-wrapper">
-                    <ion-icon class="warning" name="alert-circle"></ion-icon>
-                </div>
-                Note: You can find links to all the CSS property pages (along with other CSS features) listed on the MDN CSS reference. Alternatively, you should get used to searching for "mdn css-feature-name" in your favorite search engine whenever you need to find out more information about a CSS feature. For example, try searching for "mdn color" and "mdn font-size"!
-            </div>
-            <nav class="articles-navigation-buttons">
-                <a href="">Previous</a>
-                <a href="">Overview</a>
-                <a href="">Next</a>
-            </nav>
-        </article>
-    </main>
-    <aside>
-        <form class="help-improve-mdn-form">
-            <ion-icon class="help-icon" name="chatbubbles" alt="Two dialog clouds" aria-hidden="true"></ion-icon>
-            <div class="form-content">
-                <h2>Help improve MDN</h2>
-                <div class="feedback-input">
-                    <p class="feedback-question">Was this page helpful to you?</p>
-                </div>
-                <div class="feedback-output">
-                    <div class="feedback-buttons-wrapper">
-                        <button class="feedback-button yes" type="submit" name="useful" value="true">
-                            <ion-icon class="thumbs-up" name="thumbs-up-sharp" aria-hidden="true"></ion-icon>
-                            Yes
-                        </button>
-                        <button class="feedback-button no" type="button">
-                            <ion-icon class="thumbs-down" name="thumbs-down-sharp" aria-hidden="true"></ion-icon>
-                            No
-                        </button>
+    <div class="main-wrapper">
+        <nav class="table-of-contents">
+            <h2>In this article</h2>
+        </nav>
+        <main>
+            <article>
+                <h1 class="title" >Article heading</h1>  
+                <nav class="articles-navigation-buttons">
+                    <a href="">Previous</a>
+                    <a href="">Overview</a>
+                    <a href="">Next</a>
+                </nav>
+                <p>I'm a introductory paragraph</p>
+                <table class="prospect-table">
+                    <tr>
+                        <th>Prerequisites</th>
+                        <td>A basic understanding of HTML and CSS, an understanding of what JavaScript is.</td>
+                    </tr>
+                    <tr>
+                        <th>Objective</th>
+                        <td>To understand that strings are objects, and learn how to use some of the basic methods available on those objects to manipulate strings.</td>
+                    </tr>
+                </table>
+                <p><a href="">I'm a hiperlink</a></p>
+                <ul>
+                    <li>I'm a list item</li>
+                    <li>I'm a list item</li>
+                    <li>I'm a list item</li>
+                </ul>
+                <div class="code-snnipet-wrapper">
+                    <div class="snnipet-header">
+                        <span class="code-tagger" >CSS</span>
+                        <!-- <img class="copy-code-button" src="/media/clippy.svg" alt=""> -->
+                        <ion-icon class="copy-code-button" name="clipboard-outline"></ion-icon>
                     </div>
-                    <div class="negative-feedback-options-wrapper">
+                    <code>
+                        h1 { <br>
+                            color: red; <br>
+                            font-size: 5em; <br>
+                        }
+                    </code>
+                </div>
+                <div class="info-note">
+                    <div class="warning-wrapper">
+                        <ion-icon class="warning" name="alert-circle"></ion-icon>
+                    </div>
+                    Note: You can find links to all the CSS property pages (along with other CSS features) listed on the MDN CSS reference. Alternatively, you should get used to searching for "mdn css-feature-name" in your favorite search engine whenever you need to find out more information about a CSS feature. For example, try searching for "mdn color" and "mdn font-size"!
+                </div>
+                <nav class="articles-navigation-buttons">
+                    <a href="">Previous</a>
+                    <a href="">Overview</a>
+                    <a href="">Next</a>
+                </nav>
+            </article>
+            <aside>
+                <form class="help-improve-mdn-form">
+                    <ion-icon class="help-icon" name="chatbubbles" alt="Two dialog clouds" aria-hidden="true"></ion-icon>
+                    <div class="form-content">
+                        <h2>Help improve MDN</h2>
+                        <div class="feedback-input">
+                            <p class="feedback-question">Was this page helpful to you?</p>
+                        </div>
+                        <div class="feedback-output">
+                            <div class="feedback-buttons-wrapper">
+                                <button class="feedback-button yes" type="submit" name="useful" value="true">
+                                    <ion-icon class="thumbs-up" name="thumbs-up-sharp" aria-hidden="true"></ion-icon>
+                                    Yes
+                                </button>
+                                <button class="feedback-button no" type="button">
+                                    <ion-icon class="thumbs-down" name="thumbs-down-sharp" aria-hidden="true"></ion-icon>
+                                    No
+                                </button>
+                            </div>
+                            <div class="negative-feedback-options-wrapper">
+                                <p>
+                                    <label>
+                                        <input type="radio" name="feedback" value="Content is out of date" class="negative-feedback-option">
+                                        Content is out of date
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="feedback" value="Missing information" class="negative-feedback-option">
+                                        Missing information
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="feedback" value="Code examples not working as expected" class="negative-feedback-option">
+                                        Code examples not working as expected
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="radio" name="feedback" value="Other" class="negative-feedback-option">
+                                        Other
+                                    </label>
+                                </p>
+                            </div>
+                            <button type="submit" class="negative-feedback-submit-button" disabled>Submit</button>
+                            <p class="feedback-response">Thank you for your feedback! ❤️</p>
+                        </div>
                         <p>
-                            <label>
-                                <input type="radio" name="feedback" value="Content is out of date" class="negative-feedback-option">
-                                Content is out of date
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="radio" name="feedback" value="Missing information" class="negative-feedback-option">
-                                Missing information
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="radio" name="feedback" value="Code examples not working as expected" class="negative-feedback-option">
-                                Code examples not working as expected
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="radio" name="feedback" value="Other" class="negative-feedback-option">
-                                Other
-                            </label>
+                            <a href="https://github.com/mdn/content/blob/main/CONTRIBUTING.md">Learn how to contribute</a>.
                         </p>
                     </div>
-                    <button type="submit" class="negative-feedback-submit-button" disabled>Submit</button>
-                    <p class="feedback-response">Thank you for your feedback! ❤️</p>
-                </div>
-                <p>
-                    <a href="https://github.com/mdn/content/blob/main/CONTRIBUTING.md">Learn how to contribute</a>.
-                </p>
-            </div>
-            <div class="form-footer">
-                <p>This page was last modified on Aug 1, 2024 by <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section/contributors.txt">MDN contributors</a>.</p>
-                <p><a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/section/index.md?plain=1">View this page on GitHub</a> • <a href="https://github.com/mdn/content/issues/new?template=page-report.yml&mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Fsection&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EPage+report+details%3C%2Fsummary%3E%0A%0A*+Folder%3A+%60en-us%2Fweb%2Fhtml%2Felement%2Fsection%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Fsection%0A*+GitHub+URL%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fblob%2Fmain%2Ffiles%2Fen-us%2Fweb%2Fhtml%2Felement%2Fsection%2Findex.md%0A*+Last+commit%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fcommit%2Fcb132bc83b660e51be8959de5336c00b08030104%0A*+Document+last+modified%3A+2024-08-01T16%3A24%3A09.000Z%0A%0A%3C%2Fdetails%3E">Report a problem with this content</a></p>
-            </div>
-        </form>
-    </aside>
+                    <div class="form-footer">
+                        <p>This page was last modified on Aug 1, 2024 by <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section/contributors.txt">MDN contributors</a>.</p>
+                        <p><a href="https://github.com/mdn/content/blob/main/files/en-us/web/html/element/section/index.md?plain=1">View this page on GitHub</a> • <a href="https://github.com/mdn/content/issues/new?template=page-report.yml&mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Fsection&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EPage+report+details%3C%2Fsummary%3E%0A%0A*+Folder%3A+%60en-us%2Fweb%2Fhtml%2Felement%2Fsection%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%2FElement%2Fsection%0A*+GitHub+URL%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fblob%2Fmain%2Ffiles%2Fen-us%2Fweb%2Fhtml%2Felement%2Fsection%2Findex.md%0A*+Last+commit%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fcommit%2Fcb132bc83b660e51be8959de5336c00b08030104%0A*+Document+last+modified%3A+2024-08-01T16%3A24%3A09.000Z%0A%0A%3C%2Fdetails%3E">Report a problem with this content</a></p>
+                    </div>
+                </form>
+            </aside>
+        </main>
+        <aside class="content-navigation-sidebar-wrapper"> <!-- Act as a background content darkening cover -->
+            <nav class="content-navigation-sidebar">
+                <h2>On this page</h2>
+                <ul>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                    <li><a href="#article-heading">Article heading</a></li>
+                    <li><a href="#prospect-table">Prospect table</a></li>
+                    <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
+                    <li><a href="#info-note">Info note</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>   
     <footer>
         <div class="links-wrapper">
             <nav class="social">
@@ -458,61 +518,6 @@
             </nav>
         </div>    
     </dialog>
-    <aside class="content-navigation-sidebar-wrapper"> <!-- Act as a background content darkening cover -->
-        <nav class="content-navigation-sidebar">
-            <h2>On this page</h2>
-            <ul>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-                <li><a href="#article-heading">Article heading</a></li>
-                <li><a href="#prospect-table">Prospect table</a></li>
-                <li><a href="#code-snnipet-wrapper">Code snnipet</a></li>
-                <li><a href="#info-note">Info note</a></li>
-            </ul>
-        </nav>
-    </aside>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

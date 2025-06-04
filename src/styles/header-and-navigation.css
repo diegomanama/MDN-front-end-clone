@@ -32,7 +32,9 @@
         border: 1px solid var(--secondary-foreground-color);
         background-color: var(--secondary-background-color);
         display: grid;
-        grid-template-columns: 3.2rem 1fr 3.2rem;
+        grid-template: 
+            ". . open-article-actions-button"
+            / 3.2rem 1fr 3.2rem;
         align-items: center;
         justify-items: center;
     
@@ -44,6 +46,13 @@
         .open-article-actions-button {
             block-size: inherit;
             inline-size: 2rem;
+            grid-area: open-article-actions-button;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        .sidebar-button {
+            display: none;
         }
     }
 }

@@ -1,8 +1,14 @@
 @layer initial-render {
+    .main-wrapper {
+        display: flex;
+    }
+
     main {
         padding-inline: var(--section-inline-space);
         margin-block-start: 9.6rem;
         display: flow-root;
+        flex: 2;
+        order: 2;
     }
     
     .articles-navigation-buttons {
@@ -22,6 +28,104 @@
     
         a:visited {
             color: var(--visited-link-color)
+        }
+    }
+
+    .table-of-contents {
+        display: none;
+        flex: 1;
+        order: 3;
+        overflow-y: scroll;
+        position: sticky;
+        top: 9.6rem;
+        height: calc(100vh - 9.6rem);
+    }
+
+    .content-navigation-sidebar {
+        position: fixed;
+        top: 9.6rem;
+        height: calc(100vh - 9.6rem);
+        left: -30rem;
+        right: 25vw;
+        max-width: 30rem;
+        padding-inline-start: var(--section-inline-space);
+        overflow-y: scroll;
+        background-color: var(--secondary-background-color);
+        display: none;
+        transition: display 0.25s allow-discrete,
+                    left 0.25s ease-in-out;
+    }
+    
+    .content-navigation-sidebar-wrapper {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+        display: none;
+        transition: display 0.25s allow-discrete,
+                    background-color 0.25s ease-in-out;
+        flex: 1;
+        order: 1;
+    }
+
+    @media screen and (min-width: 769px) {
+        .content-navigation-sidebar {
+            position: sticky;
+            inset-inline: auto;
+            max-width: none;
+            display: block;
+            transition: none;
+        }
+
+        .content-navigation-sidebar-wrapper {
+            position: static;
+            display: block;
+            transition: none;
+        }
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        .table-of-contents {
+            display: block;
+        }
+    }
+}
+
+@layer post-initial-render {
+    body.overflow-hidden {
+        overflow-y: hidden;
+    }
+
+    .content-navigation-sidebar.on-screen {
+        left: 0rem;
+    
+        @starting-style {
+            left: -30rem;
+        }
+    }
+
+    .content-navigation-sidebar-wrapper.fade-in {
+        background-color: rgba(0, 0, 0, 0.5);
+    
+        @starting-style {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    .content-navigation-sidebar.visible,
+    .content-navigation-sidebar-wrapper.visible {
+        display: block;
+    }
+
+    /* Make the page scrollbar appears again when switching to desktop view after opening the mobile view's sidebar */
+
+    @media screen and (min-width: 769px) {
+        body.overflow-hidden {
+            overflow-y: scroll;
         }
     }
 }
